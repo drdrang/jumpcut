@@ -120,10 +120,10 @@ typedef unsigned NSWindowCollectionBehavior;
 											   displaying:[[NSUserDefaults standardUserDefaults] integerForKey:@"displayNum"]
 										withDisplayLength:_DISPLENGTH];
 	// Set up the bezel window
-    NSSize windowSize = NSMakeSize(325.0, 325.0);
+    NSSize windowSize = NSMakeSize(525.0, 325.0);
     NSSize screenSize = [[NSScreen mainScreen] frame].size;
 	NSRect windowFrame = NSMakeRect( (screenSize.width - windowSize.width) / 2,
-                                     (screenSize.height - windowSize.height) / 3,
+                                     (screenSize.height - windowSize.height) * 2 / 3,
 									 windowSize.width, windowSize.height );
 	bezel = [[BezelWindow alloc] initWithContentRect:windowFrame
 										   styleMask:NSBorderlessWindowMask
