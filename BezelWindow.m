@@ -35,7 +35,7 @@
 		[[self contentView] addSubview:textField];
 		[textField setEditable:NO];
 		[textField setTextColor:[NSColor whiteColor]];
-		[textField setBackgroundColor:[NSColor colorWithCalibratedWhite:0.33 alpha:.45]];
+		[textField setBackgroundColor:[NSColor colorWithCalibratedWhite:1.0 alpha:0.0]];
 		[textField setDrawsBackground:YES];
 		[textField setBordered:NO];
 		[textField setAlignment:NSLeftTextAlignment];
@@ -44,7 +44,7 @@
 		[[self contentView] addSubview:charField];
 		[charField setEditable:NO];
 		[charField setTextColor:[NSColor whiteColor]];
-		[charField setBackgroundColor:[NSColor colorWithCalibratedWhite:0.33 alpha:.45]];
+		[charField setBackgroundColor:[NSColor colorWithCalibratedWhite:0.33 alpha:0.0]];
 		[charField setDrawsBackground:YES];
 		[charField setBordered:NO];
 		[charField setAlignment:NSCenterTextAlignment];
