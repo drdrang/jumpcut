@@ -30,7 +30,7 @@
 		[self setMovableByWindowBackground:NO];
 		[self setBackgroundColor:[self sizedBezelBackgroundWithRadius:25.0 withAlpha:[[NSUserDefaults standardUserDefaults] floatForKey:@"bezelAlpha"]]];
 		float lineHeight = 16;
-    float nLineHeight = 30;
+    float nLineHeight = 24;
 		NSRect textFrame = NSMakeRect(12, 12, [self frame].size.width - 24, 13 * lineHeight);
 		textField = [[RoundRecTextField alloc] initWithFrame:textFrame];
 		[[self contentView] addSubview:textField];
@@ -40,12 +40,12 @@
 		[textField setDrawsBackground:YES];
 		[textField setBordered:NO];
 		[textField setAlignment:NSLeftTextAlignment];
-		NSRect charFrame = NSMakeRect(50, 250, 1.75 * nLineHeight, 1.25 * nLineHeight);
+		NSRect charFrame = NSMakeRect(450, 250, 1.75 * nLineHeight, 1.25 * nLineHeight);
 		charField = [[RoundRecTextField alloc] initWithFrame:charFrame];
 		[[self contentView] addSubview:charField];
 		[charField setEditable:NO];
 		[charField setTextColor:[NSColor whiteColor]];
-    [charField setFont: [NSFont systemFontOfSize: 24]];
+    [charField setFont: [NSFont systemFontOfSize: 18]];
 		[charField setBackgroundColor:[NSColor colorWithCalibratedWhite:0.33 alpha:0.0]];
 		[charField setDrawsBackground:YES];
 		[charField setBordered:NO];
