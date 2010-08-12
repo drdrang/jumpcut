@@ -17,6 +17,7 @@
 
 #define _DISPLENGTH 40
 
+// The following lines should be uncommented if you're building on 10.5 or earlier.
 //enum {
 //    NSWindowCollectionBehaviorDefault = 0,
 //    NSWindowCollectionBehaviorCanJoinAllSpaces = 1 << 0,
