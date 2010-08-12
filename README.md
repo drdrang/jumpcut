@@ -10,7 +10,7 @@ This is a fork of [Steve Cook's Jumpcut][1], a multi-clipboard utility for text 
 A more complete description can be found [here][2].
 
 **Note**  
-The current version will compile in XCode 3.2.3 on Snow Leopard. If you need to compile on a Leopard machine, uncomment the `enum` in these lines of AppController.m:
+The current version will compile in XCode 3.2.3 on Snow Leopard. If you need to build on a Leopard machine, uncomment the `enum` in these lines of AppController.m:
 
 		// The following lines should be uncommented if you're building on 10.5 or earlier.
 		//enum {
@@ -21,6 +21,9 @@ The current version will compile in XCode 3.2.3 on Snow Leopard. If you need to 
 
 You may also need to change the Base SDK in the XCode Project Settings.
 
+Thanks to [Matthew Freeman][3] for pointing out that the older version wouldn't build anymore.
+
 
 [1]: http://jumpcut.sourceforge.net
 [2]: http://www.leancrew.com/all-this/2009/01/jumpcut/
+[3]: http://github.com/n2linux
