@@ -77,5 +77,8 @@
 // Delete all list clippings
 -(void) clearList;
 
+// Deletes the newest clipping added
+-(void) clearNewestItem;
+
 // Delete all named clippings
 @end

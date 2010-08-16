@@ -73,12 +73,18 @@
 
 // Clear remembered and listed
 -(void) clearList {
-    NSMutableArray *emptyJCList;
-    emptyJCList = [[NSMutableArray alloc] init];
-    [jcList release];
-    jcList = emptyJCList;
+//    NSMutableArray *emptyJCList;
+//    emptyJCList = [[NSMutableArray alloc] init];
+//    [jcList release];
+//    jcList = emptyJCList;
+    // No need to allocate a new array just remove all objects
+    [jcList removeAllObjects];
 }
 
+// Newest item in the list will be deleted
+-(void) clearLatestItem {
+    [jcList removeObjectAtIndex:0];
+}
 
 // Set various values
 -(void) setRememberNum:(int)nowRemembering
