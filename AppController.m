@@ -516,13 +516,13 @@ typedef unsigned NSWindowCollectionBehavior;
     int choice;
     
     [NSApp activateIgnoringOtherApps:YES];
-    choice = NSRunAlertPanel(NSLocalizedString(@"Delete Newest Clipping", @"Alert panel - delete newest clipping - title"),
-                             NSLocalizedString(@"Do you want to delete the most recently added clipping?", @"Alert panel - delete newest clipping - message"),
-                             NSLocalizedString(@"Delete", @"Alert panel - delete newest clipping - message"), NSLocalizedString(@"Cancel", @"Alert panel - cancel"), nil);
+    choice = NSRunAlertPanel(@"Delete Newest Clipping",
+                             @"Do you want to delete the most recently added clipping?",
+                             @"Delete", @"Cancel", nil);
     
     // on clear, zap the list and redraw the menu
     if ( choice == NSAlertDefaultReturn ) {
-        [clippingStore clearLatestItem];
+        [clippingStore clearNewestItem];
         [self updateMenu];
         if ( [[NSUserDefaults standardUserDefaults] integerForKey:@"savePreference"] >= 1 ) {
             [self saveEngine];

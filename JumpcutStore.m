@@ -82,7 +82,7 @@
 }
 
 // Newest item in the list will be deleted
--(void) clearLatestItem {
+-(void) clearNewestItem {
     [jcList removeObjectAtIndex:0];
 }
 
